@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short survey</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form class="form">
+        <div class="name-and-mail"> <!--The block contains input elements accepting first name, last name and email-->
+            <div class="name">
+                <div class="field-title"> <!--FIeld title is a common class given to the subtitle level elements in all div blocks-->
+                    Name<span class="asterisk">*</span>
+                </div>
+                <div class="name-input">
+                    <table>
+                        <tr>
+                            <td class="input"><input type="text" required></td>
+                            <td class="input"><input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td class="ultra-condensed left-pad">First</td>
+                            <td class="ultra-condensed left-pad">Last</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mail">
+                <div class="field-title">
+                    Email<span class="asterisk">*</span>
+                </div>
+                <div class="email-input">
+                    <div class="email-address">
+                        <input type="email" required>
+                    </div>
+                </div>
+            </div>
+        </div> <!--End of name and email input elements-->
+        <div class="rating">
+            <div class="field-title">
+                Your Experience<span class="asterisk">*</span>
+            </div>
+            <div class="rating-input">
+                <div class="rating-star">
+                    <div style="margin-bottom: 8px;">
+                        <span class="fa fa-star" onclick="rate(1)"></span>
+                        <span class="fa fa-star" onclick="rate(2)"></span>
+                        <span class="fa fa-star" onclick="rate(3)"></span>
+                        <span class="fa fa-star" onclick="rate(4)"></span>
+                        <span class="fa fa-star" onclick="rate(5)"></span>
+                    </div>
+                    <div class="ultra-condensed">Overall, how would you rate your experience with us?</div>
+                </div>
+                
+            </div>
+        </div> <!--End of star-rating division-->
+        <div class="survey-questions">
+            <div class="field-title">
+                How satisfied are you with<span class="asterisk">*</span>
+            </div>
+            <div class="feedback-que">
+                <table>
+                    <tr>
+                        <td class="ultra-condensed centered"></td>
+                        <td class="ultra-condensed centered">Very Unsatisfied</td>
+                        <td class="ultra-condensed centered">Unsatisfied</td>
+                        <td class="ultra-condensed centered">Neutral</td>
+                        <td class="ultra-condensed centered">Satisfied</td>
+                        <td class="ultra-condensed centered">Very Satisfied</td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Purchase</td>
+                        <td><input type="radio" name="purchase" class="radio"></td>
+                        <td><input type="radio" name="purchase" class="radio"></td>
+                        <td><input type="radio" name="purchase" class="radio"></td>
+                        <td><input type="radio" name="purchase" class="radio"></td>
+                        <td><input type="radio" name="purchase" class="radio"></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Service</td>
+                        <td><input type="radio" name="service" class="radio"></td>
+                        <td><input type="radio" name="service" class="radio"></td>
+                        <td><input type="radio" name="service" class="radio"></td>
+                        <td><input type="radio" name="service" class="radio"></td>
+                        <td><input type="radio" name="service" class="radio"></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Company Overall</td>
+                        <td><input type="radio" name="company-overall" class="radio"></td>
+                        <td><input type="radio" name="company-overall" class="radio"></td>
+                        <td><input type="radio" name="company-overall" class="radio"></td>
+                        <td><input type="radio" name="company-overall" class="radio"></td>
+                        <td><input type="radio" name="company-overall" class="radio"></td>
+                    </tr>
+                </table>
+            </div> <!--End of how-satified-are-you feedback-->
+            <div class="field-title" style="margin-top: 15px;">
+                How likely are you to<span class="asterisk">*</span>
+            </div>
+            <div class="feedback-que">
+                <table>
+                    <tr>
+                        <td class="ultra-condensed centered"></td>
+                        <td class="ultra-condensed centered">Very Unlikely</td>
+                        <td class="ultra-condensed centered">Unlikely</td>
+                        <td class="ultra-condensed centered">Neutral</td>
+                        <td class="ultra-condensed centered">Likely</td>
+                        <td class="ultra-condensed centered">Very Likely</td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Buy from us again</td>
+                        <td><input type="radio" name="buy-again" class="radio"></td>
+                        <td><input type="radio" name="buy-again" class="radio"></td>
+                        <td><input type="radio" name="buy-again" class="radio"></td>
+                        <td><input type="radio" name="buy-again" class="radio"></td>
+                        <td><input type="radio" name="buy-again" class="radio"></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Recommend our product to others</td>
+                        <td><input type="radio" name="recommend-product" class="radio"></td>
+                        <td><input type="radio" name="recommend-product" class="radio"></td>
+                        <td><input type="radio" name="recommend-product" class="radio"></td>
+                        <td><input type="radio" name="recommend-product" class="radio"></td>
+                        <td><input type="radio" name="recommend-product" class="radio"></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text">Recommend our company to others</td>
+                        <td><input type="radio" name="recommend-company" class="radio"></td>
+                        <td><input type="radio" name="recommend-company" class="radio"></td>
+                        <td><input type="radio" name="recommend-company" class="radio"></td>
+                        <td><input type="radio" name="recommend-company" class="radio"></td>
+                        <td><input type="radio" name="recommend-company" class="radio"></td>
+                    </tr>
+                </table>
+            </div><!--End of how-likely-are-you-to feedback-->
+            <div class="field-title" style="margin-top: 15px;">
+                Additional comments or suggestions<span class="asterisk">*</span>
+            </div>
+            <div class="feedback-comment">
+                <textarea name="comment"></textarea>
+            </div>
+        </div> <!--End of all survey questionnare - Satisfaction, likely-to and comments-->
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="/script.js"></script>
+</body>
+</html>

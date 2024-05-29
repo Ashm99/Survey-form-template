@@ -1,0 +1,107 @@
+:root{
+    --red-orange: #EEAC82;
+}
+body{
+    background-color: var(--red-orange);
+}
+.form{
+    background-color: white;
+    width: 700px;
+    height: 700px;
+    padding: 12px;
+}
+.asterisk{
+    color: red;
+    padding-left: 5px;
+    margin: 0;
+}
+.ultra-condensed{
+    font-family: Arial;
+    font-stretch: ultra-condensed;
+    font-size: small;
+}
+input,
+textarea{
+    border-width: 2px;
+    border-radius: 3px;
+    border-style: solid;
+}
+.name-and-mail{
+    width: 60%;
+}
+.name,
+.mail{
+    padding-bottom: 5px;
+}
+.field-title{
+    font-weight: bold;
+    font-family: Calibri;
+    font-weight: 5000;
+}
+.name-input table{
+    width: 100%;
+}
+.input{
+    padding-right: 10px;
+    padding-left: 0px;
+}
+.email-address{
+    padding-right: 10px;
+    padding-bottom: 12px;
+}
+.name-and-mail input{
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.rating-input{
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+.checked{
+    color: darkorange;
+}
+.survey-questions table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.survey-questions td{
+    width: 10%;
+    padding: 5px;
+}
+.radio{
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+.feedback-que tr:nth-child(even){
+    background-color: silver;
+    padding: 5px;
+}
+.feedback-que tr:nth-child(even) td:first-child{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.feedback-que tr:nth-child(even) td:last-child{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.centered{
+    text-align: center;
+}
+.small-text{
+    font-size: small;
+}
+.feedback-comment{
+    width: 100%;
+}
+.feedback-comment textarea{
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box ;
+}
+.submit button{
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
